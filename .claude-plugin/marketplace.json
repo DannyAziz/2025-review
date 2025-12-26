@@ -1,0 +1,17 @@
+{
+  "name": "danny-skills",
+  "owner": {
+    "name": "Danny Aziz"
+  },
+  "metadata": {
+    "description": "Personal productivity plugins and skills",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "2025-review",
+      "source": "./2025-review",
+      "description": "Guide through 2025 annual review and 2026 planning via interview-style conversation"
+    }
+  ]
+}
