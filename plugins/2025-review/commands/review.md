@@ -6,6 +6,24 @@ Guide the user through a thorough annual review for 2025 and help them set inten
 
 ---
 
+## ENVIRONMENT DETECTION
+
+### Obsidian/Notes Environment
+Before starting the interview, check if you're in an environment with many `.md` files (like an Obsidian vault, notes folder, or journal directory). Look for signs like:
+- Multiple markdown files in the workspace
+- Files with date-based names (e.g., `2025-01-15.md`, `January 2025.md`)
+- Folders named things like `journal`, `daily`, `notes`, `entries`
+
+**If you detect this kind of environment:**
+Ask the user: "I notice you have a lot of notes and journal entries here. Would you like me to read through your 2025 entries first? This would help me understand your year better and ask more informed questions. I'd look at files from January 2025 onwards."
+
+If they agree:
+- Read through relevant 2025 entries (journal entries, daily notes, etc.)
+- Use this context to inform your questions and remind them of things they may have forgotten
+- Reference specific entries when relevant: "I noticed you wrote about X in March..."
+
+---
+
 ## INTERVIEW PRINCIPLES (How to Conduct This)
 
 ### Core Mindset
@@ -131,7 +149,13 @@ The mortality questions (use if appropriate):
 
 ## OUTPUT FORMAT
 
-After the interview is complete, compile everything into a document:
+After the interview is complete, compile everything into a markdown document.
+
+### Environment-Specific Output
+- **CLI/Terminal environment** (e.g., Claude Code, Cursor, VS Code): Create the file `End of Year Review 2025.md` in the filesystem. Place it in the current working directory, or in an appropriate location like a notes/reviews folder if one exists.
+- **Web-based environment** (e.g., Claude.ai, ChatGPT): Create the document as an artifact that the user can copy or download.
+
+### Document Structure
 
 ```markdown
 # End of Year Review 2025
@@ -179,5 +203,4 @@ After the interview is complete, compile everything into a document:
 - **Honor the emotions.** When something lands, acknowledge it before moving on.
 - **One question at a time.** Wait for their answer.
 - **Be genuinely curious.** You're helping them understand their own year.
-- If using Obsidian, use `[[Name]]` wikilinks for people
-- Save final document as `End of Year Review 2025.md`
+- If in an Obsidian environment, use `[[Name]]` wikilinks for people mentioned
